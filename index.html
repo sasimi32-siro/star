@@ -133,7 +133,7 @@
     transition: opacity 0.5s ease-out 0.25s;
   }
 </style>
-<title>스타클린 - 에어컨 청소, 스타클린과 함께하세요</title>
+<title>스타클린</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Cafe24Ssurround/Cafe24Ssurround.css" type="text/css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Cafe24ClassicType/Cafe24ClassicType.css" type="text/css"/>
@@ -321,9 +321,15 @@
     font-weight: 700;
     font-size: 1.05em;
     transition: transform 0.2s ease;
+    animation: topnavArrowNudge 1.8s ease-in-out infinite;
+  }
+  @keyframes topnavArrowNudge {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
   }
   .topnav-menu a.topnav-quote-btn:hover .topnav-quote-arrow {
     transform: translateX(3px);
+    animation: none;
   }
   .topnav-menu a.topnav-quote-btn:hover,
   .topnav.scrolled .topnav-menu a.topnav-quote-btn:hover {
@@ -1653,7 +1659,7 @@
     .hero {
       background:
         linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url('https://sasimi32.cafe24.com/starclean/img_01_994c6fe378.jpg') center top/cover no-repeat;
+        url('img_01_994c6fe378.jpg') center top/cover no-repeat;
       padding: 70px 24px 30px;
       margin: 0 12px 0;
       border-radius: 24px;
@@ -1886,8 +1892,8 @@
 <header class="topnav">
   <div class="logo">
     <a href="#">
-      <img class="logo-initial" src="https://sasimi32.cafe24.com/img/logow1.png" alt="스타클린" />
-      <img class="logo-scrolled" src="https://sasimi32.cafe24.com/img/logob1.png" alt="" />
+      <img class="logo-initial" src="logow1.png" alt="스타클린" />
+      <img class="logo-scrolled" src="logob1.png" alt="" />
     </a>
   </div>
   <nav class="topnav-menu">
@@ -1922,7 +1928,7 @@
     <a href="#st-section">작업시간</a>
     <a href="#sq-section">자주묻는질문</a>
     <a href="#price-section">가격안내</a>
-    <a href="#quote-section" class="topnav-quote-btn">견적문의</a>
+    <a href="#quote-section" class="topnav-quote-btn">견적문의<span class="topnav-quote-arrow" aria-hidden="true">→</span></a>
   </div>
 </header>
 
@@ -1930,7 +1936,7 @@
 <div class="m-menu-overlay" id="mMenuOverlay" aria-hidden="true"></div>
 <aside class="m-menu-panel" id="mMenuPanel" aria-hidden="true" role="dialog" aria-label="모바일 메뉴">
   <div class="m-menu-header">
-    <img class="m-menu-logo" src="https://sasimi32.cafe24.com/img/logob1.png" alt="스타클린" />
+    <img class="m-menu-logo" src="logob1.png" alt="스타클린" />
     <button class="m-menu-close" id="mMenuClose" aria-label="메뉴 닫기">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -1955,7 +1961,7 @@
 <!-- 히어로 섹션 -->
 <section class="hero">
   <video class="hero-video-m" autoplay muted loop playsinline webkit-playsinline preload="auto">
-    <source src="https://sasimi32.cafe24.com/starclean/video_01_a7f21b5f56.mp4" type="video/mp4">
+    <source src="video_01_a7f21b5f56.mp4" type="video/mp4">
   </video>
   <div class="hero-inner">
     <div class="hero-text">
@@ -2171,7 +2177,7 @@
             <p class="sc-desc">인체와 환경에 안전한<br/>친환경 인증 약품만 사용</p>
           </div>
           <div class="sc-card-img">
-            <img src="https://sasimi32.cafe24.com/img/calclean.webp" alt="친환경 인증 약품 CalClean" loading="lazy" decoding="async" />
+            <img src="calclean.webp" alt="친환경 인증 약품 CalClean" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="sc-card sc-card-with-img">
@@ -2181,7 +2187,7 @@
             <p class="sc-desc">배상책임보험에 정식 가입되어<br/>안전하게 작업합니다</p>
           </div>
           <div class="sc-card-img">
-            <img src="https://sasimi32.cafe24.com/img/insurance.webp" alt="현대해상 영업배상책임보험 1억원" loading="lazy" decoding="async" />
+            <img src="insurance.webp" alt="현대해상 영업배상책임보험 1억원" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -2194,7 +2200,7 @@
             <p class="sc-desc">막힌 먼지를 비워내<br/>새것같은 시원함을 선사</p>
           </div>
           <div class="sc-card-img">
-            <img src="https://sasimi32.cafe24.com/img/aircon-temp.webp" alt="청소 후 시원한 토출 온도 측정" loading="lazy" decoding="async" />
+            <img src="aircon-temp.webp" alt="청소 후 시원한 토출 온도 측정" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="sc-card sc-card-with-img">
@@ -2204,7 +2210,7 @@
             <p class="sc-desc">벽걸이부터 시스템까지<br/>어떤 에어컨이든 책임집니다</p>
           </div>
           <div class="sc-card-img">
-            <img src="https://sasimi32.cafe24.com/img/office-cleaning.webp" alt="사무실 시스템 에어컨 분해세척 작업" loading="lazy" decoding="async" />
+            <img src="office-cleaning.webp" alt="사무실 시스템 에어컨 분해세척 작업" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -2217,7 +2223,7 @@
             <p class="sc-desc">본사 인증 교육을 마친<br/>현장 전문가가 직접 방문</p>
           </div>
           <div class="sc-card-img">
-            <img src="https://sasimi32.cafe24.com/img/team.webp" alt="스타클린 전문 엔지니어 단체사진" loading="lazy" decoding="async" />
+            <img src="team.webp" alt="스타클린 전문 엔지니어 단체사진" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="sc-card sc-card-with-img">
@@ -2227,7 +2233,7 @@
             <p class="sc-desc">다년간 가정과 매장에서<br/>검증된 청소 실력</p>
           </div>
           <div class="sc-card-img">
-            <img src="https://sasimi32.cafe24.com/img/work-ladder.webp" alt="천장형 에어컨 분해세척 작업 현장" loading="lazy" decoding="async" />
+            <img src="work-ladder.webp" alt="천장형 에어컨 분해세척 작업 현장" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -2509,7 +2515,7 @@
   <div class="sa-grid">
     <div class="sa-card sa-card-with-img">
       <div class="sa-img-top">
-        <img src="https://sasimi32.cafe24.com/img/cert.webp" alt="청소대행사 인증표" loading="lazy" decoding="async" />
+        <img src="cert.webp" alt="청소대행사 인증표" loading="lazy" decoding="async" />
       </div>
       <div class="sa-card-body">
         <p class="sa-name">청소대행사<br/>인증회사</p>
@@ -2518,7 +2524,7 @@
     </div>
     <div class="sa-card sa-card-with-img">
       <div class="sa-img-top">
-        <img src="https://sasimi32.cafe24.com/img/installation-site.webp" alt="누적시공 3.2만 건 현장" loading="lazy" decoding="async" />
+        <img src="installation-site.webp" alt="누적시공 3.2만 건 현장" loading="lazy" decoding="async" />
       </div>
       <div class="sa-card-body">
         <p class="sa-name">누적시공<br/>3.2만 건</p>
@@ -2527,7 +2533,7 @@
     </div>
     <div class="sa-card sa-card-with-img">
       <div class="sa-img-top">
-        <img src="https://sasimi32.cafe24.com/img/manual.webp" alt="제조사 매뉴얼" loading="lazy" decoding="async" />
+        <img src="manual.webp" alt="제조사 매뉴얼" loading="lazy" decoding="async" />
       </div>
       <div class="sa-card-body">
         <p class="sa-name">제조사 매뉴얼<br/>기준 작업</p>
@@ -2536,7 +2542,7 @@
     </div>
     <div class="sa-card sa-card-with-img">
       <div class="sa-img-top">
-        <img src="https://sasimi32.cafe24.com/img/operation-temp.webp" alt="운영경력 10년차 - 정밀 온도 측정" loading="lazy" decoding="async" />
+        <img src="operation-temp.webp" alt="운영경력 10년차 - 정밀 온도 측정" loading="lazy" decoding="async" />
       </div>
       <div class="sa-card-body">
         <p class="sa-name">운영경력<br/>10년차</p>
@@ -2545,7 +2551,7 @@
     </div>
     <div class="sa-card sa-card-with-img">
       <div class="sa-img-top">
-        <img src="https://sasimi32.cafe24.com/img/veteran-work.webp" alt="베테랑 엔지니어 현장 작업" loading="lazy" decoding="async" />
+        <img src="veteran-work.webp" alt="베테랑 엔지니어 현장 작업" loading="lazy" decoding="async" />
       </div>
       <div class="sa-card-body">
         <p class="sa-name">업계 최고 수준<br/>베테랑 엔지니어</p>
@@ -2554,7 +2560,7 @@
     </div>
     <div class="sa-card sa-card-with-img">
       <div class="sa-img-top">
-        <img src="https://sasimi32.cafe24.com/img/office-cleaning.webp" alt="대형 현장 시공 경험" loading="lazy" decoding="async" />
+        <img src="office-cleaning.webp" alt="대형 현장 시공 경험" loading="lazy" decoding="async" />
       </div>
       <div class="sa-card-body">
         <p class="sa-name">대형 현장<br/>시공 경험</p>
@@ -2677,7 +2683,7 @@
 
       <!-- 카드 1 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_02_084c823c0f.webp" alt="무인카페 천장형 에어컨청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_02_084c823c0f.webp" alt="무인카페 천장형 에어컨청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">무인카페 천장형 에어컨청소</p>
@@ -2687,7 +2693,7 @@
 
       <!-- 카드 2 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_03_d8fdabe850.webp" alt="가정집 1웨이 에어컨청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_03_d8fdabe850.webp" alt="가정집 1웨이 에어컨청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">가정집 1웨이 에어컨청소</p>
@@ -2697,7 +2703,7 @@
 
       <!-- 카드 3 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_04_0b67fbbebf.webp" alt="짬뽕집 천정형 에어컨청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_04_0b67fbbebf.webp" alt="짬뽕집 천정형 에어컨청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">짬뽕집 천정형 에어컨청소</p>
@@ -2707,7 +2713,7 @@
 
       <!-- 카드 4 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_05_033bdb897e.webp" alt="피부과 에어컨청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_05_033bdb897e.webp" alt="피부과 에어컨청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">피부과 에어컨청소</p>
@@ -2717,7 +2723,7 @@
 
       <!-- 카드 5 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_06_53afa65dd2.webp" alt="사무실 스탠드 에어컨청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_06_53afa65dd2.webp" alt="사무실 스탠드 에어컨청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">사무실 스탠드 에어컨청소</p>
@@ -2727,7 +2733,7 @@
 
       <!-- 카드 6 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_07_f434ae5dd1.webp" alt="주민센터 천정형 에어컨청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_07_f434ae5dd1.webp" alt="주민센터 천정형 에어컨청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">주민센터 천정형 에어컨청소</p>
@@ -2737,7 +2743,7 @@
 
       <!-- 카드 7 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_08_743b8fc07f.webp" alt="가정집 벽걸이 에어컨청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_08_743b8fc07f.webp" alt="가정집 벽걸이 에어컨청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">가정집 벽걸이 에어컨청소</p>
@@ -2747,7 +2753,7 @@
 
       <!-- 카드 8 -->
       <div class="sr-card">
-        <img class="sr-img" src="https://sasimi32.cafe24.com/starclean/img_09_8ccea56ced.webp" alt="통돌이 세탁기청소" loading="lazy" decoding="async" />
+        <img class="sr-img" src="img_09_8ccea56ced.webp" alt="통돌이 세탁기청소" loading="lazy" decoding="async" />
         <div class="sr-overlay"></div>
         <div class="sr-content">
           <p class="sr-title">통돌이 세탁기청소</p>
@@ -3151,44 +3157,44 @@
     <div class="ba-row">
       <div class="ba-card">
         <span class="ba-badge ba-badge-before">BEFORE</span>
-        <img src="https://sasimi32.cafe24.com/img/11.webp" alt="청소 전 1" loading="lazy" decoding="async"/>
+        <img src="11.webp" alt="청소 전 1" loading="lazy" decoding="async"/>
       </div>
       <div class="ba-card">
         <span class="ba-badge ba-badge-after">AFTER</span>
-        <img src="https://sasimi32.cafe24.com/img/12.webp" alt="청소 후 1" loading="lazy" decoding="async"/>
+        <img src="12.webp" alt="청소 후 1" loading="lazy" decoding="async"/>
       </div>
     </div>
     <!-- 2행 -->
     <div class="ba-row">
       <div class="ba-card">
         <span class="ba-badge ba-badge-before">BEFORE</span>
-        <img src="https://sasimi32.cafe24.com/img/21.webp" alt="청소 전 2" loading="lazy" decoding="async"/>
+        <img src="21.webp" alt="청소 전 2" loading="lazy" decoding="async"/>
       </div>
       <div class="ba-card">
         <span class="ba-badge ba-badge-after">AFTER</span>
-        <img src="https://sasimi32.cafe24.com/img/22.webp" alt="청소 후 2" loading="lazy" decoding="async"/>
+        <img src="22.webp" alt="청소 후 2" loading="lazy" decoding="async"/>
       </div>
     </div>
     <!-- 3행 -->
     <div class="ba-row">
       <div class="ba-card">
         <span class="ba-badge ba-badge-before">BEFORE</span>
-        <img src="https://sasimi32.cafe24.com/img/31.webp" alt="청소 전 3" loading="lazy" decoding="async"/>
+        <img src="31.webp" alt="청소 전 3" loading="lazy" decoding="async"/>
       </div>
       <div class="ba-card">
         <span class="ba-badge ba-badge-after">AFTER</span>
-        <img src="https://sasimi32.cafe24.com/img/32.webp" alt="청소 후 3" loading="lazy" decoding="async"/>
+        <img src="32.webp" alt="청소 후 3" loading="lazy" decoding="async"/>
       </div>
     </div>
     <!-- 4행 -->
     <div class="ba-row">
       <div class="ba-card">
         <span class="ba-badge ba-badge-before">BEFORE</span>
-        <img src="https://sasimi32.cafe24.com/img/41.webp" alt="청소 전 4" loading="lazy" decoding="async"/>
+        <img src="41.webp" alt="청소 전 4" loading="lazy" decoding="async"/>
       </div>
       <div class="ba-card">
         <span class="ba-badge ba-badge-after">AFTER</span>
-        <img src="https://sasimi32.cafe24.com/img/42.webp" alt="청소 후 4" loading="lazy" decoding="async"/>
+        <img src="42.webp" alt="청소 후 4" loading="lazy" decoding="async"/>
       </div>
     </div>
   </div>
@@ -3415,7 +3421,7 @@
     <div class="process-card">
       <div class="process-img proc-01">
         <span class="step-badge">STEP 01</span>
-        <img src="https://sasimi32.cafe24.com/img/1.webp" alt="STEP 01" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="1.webp" alt="STEP 01" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">01. 기기 작동 및 고장진단</div>
       <div class="process-desc">정확한 점검 및 청소 전 상태 확인</div>
@@ -3425,7 +3431,7 @@
     <div class="process-card">
       <div class="process-img proc-02">
         <span class="step-badge">STEP 02</span>
-        <img src="https://sasimi32.cafe24.com/img/2.webp" alt="STEP 02" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="2.webp" alt="STEP 02" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">02. 실내기 완전분해</div>
       <div class="process-desc">모든 부품을 안전하게 분리 작업</div>
@@ -3435,7 +3441,7 @@
     <div class="process-card">
       <div class="process-img proc-03">
         <span class="step-badge">STEP 03</span>
-        <img src="https://sasimi32.cafe24.com/img/3.webp" alt="STEP 03" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="3.webp" alt="STEP 03" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">03. 열교환기 고압세척</div>
       <div class="process-desc">전용 장비로 깊숙한 오염까지</div>
@@ -3445,7 +3451,7 @@
     <div class="process-card">
       <div class="process-img proc-04">
         <span class="step-badge">STEP 04</span>
-        <img src="https://sasimi32.cafe24.com/img/4.webp" alt="STEP 04" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="4.webp" alt="STEP 04" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">04. 부품세척</div>
       <div class="process-desc">분리된 부품을 친환경약품 세척</div>
@@ -3455,7 +3461,7 @@
     <div class="process-card">
       <div class="process-img proc-05">
         <span class="step-badge">STEP 05</span>
-        <img src="https://sasimi32.cafe24.com/img/5.webp" alt="STEP 05" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="5.webp" alt="STEP 05" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">05. 건조작업</div>
       <div class="process-desc">완벽 건조로 곰팡이 재발생 방지</div>
@@ -3465,7 +3471,7 @@
     <div class="process-card">
       <div class="process-img proc-06">
         <span class="step-badge">STEP 06</span>
-        <img src="https://sasimi32.cafe24.com/img/6.webp" alt="STEP 06" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="6.webp" alt="STEP 06" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">06. 실내기 재조립</div>
       <div class="process-desc">분해 역순으로 정확하게 재조립</div>
@@ -3475,7 +3481,7 @@
     <div class="process-card">
       <div class="process-img proc-07">
         <span class="step-badge">STEP 07</span>
-        <img src="https://sasimi32.cafe24.com/img/7.webp" alt="STEP 07" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="7.webp" alt="STEP 07" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">07. 실외기 사이클 진단</div>
       <div class="process-desc">냉매 순환과 압력까지 정밀 점검</div>
@@ -3485,7 +3491,7 @@
     <div class="process-card">
       <div class="process-img proc-08">
         <span class="step-badge">STEP 08</span>
-        <img src="https://sasimi32.cafe24.com/img/8.webp" alt="STEP 08" class="process-photo" loading="lazy" decoding="async"/>
+        <img src="8.webp" alt="STEP 08" class="process-photo" loading="lazy" decoding="async"/>
       </div>
       <div class="process-name">08. 작동 테스트 및 점검</div>
       <div class="process-desc">완벽한 작동 확인 후 시공 완료</div>
@@ -4319,7 +4325,7 @@
 <style>
   .sq-section {
     width: 100%;
-    background: #f5f7fb;
+    background: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', sans-serif;
     padding: 64px 20px 72px;
     color: #1a1a1a;
@@ -4348,105 +4354,134 @@
     font-weight: 400;
     letter-spacing: -0.01em;
   }
+  /* ===== 미니멀 FAQ 리스트 ===== */
   .sq-list {
-    max-width: 420px;
+    max-width: 480px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
   }
   .sq-item {
-    background: #ffffff;
-    border: 1px solid #e8ecf3;
-    border-radius: 14px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e8ecf3;
+    border-radius: 0;
     overflow: hidden;
+  }
+  .sq-item:first-child {
+    border-top: 1px solid #e8ecf3;
   }
   .sq-question {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 16px 16px;
+    padding: 26px 8px;
     background: transparent;
     border: none;
     cursor: pointer;
     text-align: left;
     font-family: inherit;
   }
+  /* Q 아이콘 숨김 */
   .sq-q-icon {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .sq-q-icon svg {
-    width: 100%;
-    height: 100%;
+    display: none !important;
   }
   .sq-q-text {
     flex: 1;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: #1a1a1a;
     letter-spacing: -0.02em;
     line-height: 1.45;
   }
+  /* 기존 chevron SVG 숨기고 CSS로 + / − 아이콘 만들기 */
   .sq-q-arrow {
-    color: #8a8d94;
+    color: #b8bdc5;
     flex-shrink: 0;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.25s ease;
+    transition: transform 0.25s ease, color 0.2s ease;
+    position: relative;
   }
   .sq-q-arrow svg {
-    width: 18px;
-    height: 18px;
+    display: none !important;
   }
+  .sq-q-arrow::before,
+  .sq-q-arrow::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  /* 가로 막대 */
+  .sq-q-arrow::before {
+    width: 16px;
+    height: 1.8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* 세로 막대 */
+  .sq-q-arrow::after {
+    width: 1.8px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* 열렸을 때: 세로 막대 사라져서 − 로 변환 */
   .sq-item.open .sq-q-arrow {
-    transform: rotate(180deg);
+    transform: none;
+    color: #1a1a1a;
+  }
+  .sq-item.open .sq-q-arrow::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
   }
   .sq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
-    padding: 0 16px;
+    padding: 0 8px;
   }
   .sq-answer-row {
     display: flex;
     gap: 12px;
     align-items: flex-start;
-    padding-top: 14px;
-    padding-bottom: 18px;
-    border-top: 1px solid #f0f2f6;
+    padding-top: 4px;
+    padding-bottom: 22px;
+    border-top: none;
   }
+  /* A 아이콘 숨김 */
   .sq-a-icon {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .sq-a-icon svg {
-    width: 100%;
-    height: 100%;
+    display: none !important;
   }
   .sq-answer p {
     flex: 1;
-    font-size: 13px;
+    font-size: 14px;
     color: #4a4f57;
     line-height: 1.65;
     letter-spacing: -0.01em;
     margin: 0;
-    padding-top: 6px;
+    padding-top: 0;
   }
   .sq-item.open .sq-answer {
     max-height: 280px;
+  }
+  /* ===== 모바일: 폰트 1pt씩 축소 ===== */
+  @media (max-width: 768px) {
+    .sq-q-text {
+      font-size: 15px;
+    }
+    .sq-answer p {
+      font-size: 13px;
+    }
   }
 </style>
 <script>
@@ -5187,7 +5222,7 @@
       <div class="rv2-track">
     <article class="rv2-card" data-idx="1">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_10_8b5ef236ac.webp" alt="고객 후기 1 - 하늘마음**" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_10_8b5ef236ac.webp" alt="고객 후기 1 - 하늘마음**" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5214,7 +5249,7 @@
     </article>
     <article class="rv2-card" data-idx="2">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_11_54ebc19c19.webp" alt="고객 후기 2 - 또또맘" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_11_54ebc19c19.webp" alt="고객 후기 2 - 또또맘" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5241,7 +5276,7 @@
     </article>
     <article class="rv2-card" data-idx="3">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_12_10a9d19c06.webp" alt="고객 후기 3 - 슈퍼스프" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_12_10a9d19c06.webp" alt="고객 후기 3 - 슈퍼스프" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5267,7 +5302,7 @@
     </article>
     <article class="rv2-card" data-idx="4">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_13_c1d13fb558.webp" alt="고객 후기 4 - 사오정**" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_13_c1d13fb558.webp" alt="고객 후기 4 - 사오정**" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5293,7 +5328,7 @@
     </article>
     <article class="rv2-card" data-idx="5">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_14_44556a41d5.webp" alt="고객 후기 5 - SkyHighShopper **" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_14_44556a41d5.webp" alt="고객 후기 5 - SkyHighShopper **" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5319,7 +5354,7 @@
     </article>
     <article class="rv2-card" data-idx="6">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_15_a0d490efe8.webp" alt="고객 후기 6 - CleanBee **" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_15_a0d490efe8.webp" alt="고객 후기 6 - CleanBee **" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5344,7 +5379,7 @@
     </article>
     <article class="rv2-card" data-idx="7">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_16_e5f64dd0d5.webp" alt="고객 후기 7 - 슈퍼스프" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_16_e5f64dd0d5.webp" alt="고객 후기 7 - 슈퍼스프" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5370,7 +5405,7 @@
     </article>
     <article class="rv2-card" data-idx="8">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_17_a074f95139.webp" alt="고객 후기 8 - 우럭회**" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_17_a074f95139.webp" alt="고객 후기 8 - 우럭회**" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5396,7 +5431,7 @@
     </article>
     <article class="rv2-card" data-idx="9">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_18_3ef37b5c4d.webp" alt="고객 후기 9 - 초코라떼***" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_18_3ef37b5c4d.webp" alt="고객 후기 9 - 초코라떼***" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -5423,7 +5458,7 @@
     </article>
     <article class="rv2-card" data-idx="10">
       <div class="rv2-img-wrap">
-        <img class="rv2-img" src="https://sasimi32.cafe24.com/starclean/img_19_ad2cf50a94.webp" alt="고객 후기 10 - 달달복숭아**" loading="lazy" decoding="async" />
+        <img class="rv2-img" src="img_19_ad2cf50a94.webp" alt="고객 후기 10 - 달달복숭아**" loading="lazy" decoding="async" />
       </div>
       <div class="rv2-body">
         <div class="rv2-author">
@@ -6311,9 +6346,38 @@
     .partners-section h2 { font-size: 26px; }
     .partner-logo { height: 48px; padding: 0 18px; font-size: 13px; }
   }
+
+  /* === 데스크탑 전용: 진한 파랑 그라데이션 배경 === */
+  @media (min-width: 901px) {
+    .partners-section {
+      background:
+        radial-gradient(1200px 600px at 80% 10%, rgba(96, 165, 250, 0.35) 0%, rgba(96, 165, 250, 0) 60%),
+        radial-gradient(900px 500px at 15% 90%, rgba(59, 130, 246, 0.30) 0%, rgba(59, 130, 246, 0) 55%),
+        linear-gradient(135deg, #0a1e4f 0%, #14306b 35%, #1e4ba0 70%, #3b82f6 100%) !important;
+      position: relative;
+    }
+    .partners-section h2 {
+      color: #ffffff !important;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    }
+    .partners-section h2 .num {
+      color: #93c5fd !important;
+      text-shadow: 0 0 24px rgba(147, 197, 253, 0.6);
+    }
+    /* 마퀴 페이드는 배경색에 맞춰 자연스럽게 어두운 톤으로 */
+    .partners-marquee {
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%) !important;
+      mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%) !important;
+    }
+    /* 로고 알약은 진한 배경 위에서 살짝 떠 보이게 */
+    .partners-section .partner-logo {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      border-color: transparent !important;
+    }
+  }
 </style>
 <section class="partners-section">
-  <h2><span class="num">1982+</span>개의 많은 업체가<br/>STARCLEAN과 함께하고 있어요</h2>
+  <h2>수많은 업체가<br/>STARCLEAN과 함께하고 있어요</h2>
   <div class="partners-marquee">
       <div class="partners-track">
         <div class="partner-logo" style="color:#d4520f;">김밥나라</div>
@@ -6954,7 +7018,7 @@
           <span class="qp-agree-text"><strong>[필수]</strong> 개인정보 수집/이용 동의</span>
         </label>
 
-        <button type="submit" class="qp-submit">맞춤 견적서 받아보기</button>
+        <button type="submit" class="qp-submit">문의하기</button>
       </form>
     </div>
 
@@ -8148,12 +8212,33 @@
     margin: 0 auto !important;
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 16px 20px !important;
+    gap: 0 48px !important;
   }
   .sq-list .sq-item,
   .sq-container .sq-item {
     margin: 0 !important;
     align-self: start !important;
+  }
+  /* 데스크탑 2열에서 첫행(1,2번째 아이템)만 위쪽 테두리 표시 */
+  .sq-list .sq-item:first-child,
+  .sq-list .sq-item:nth-child(2),
+  .sq-container .sq-item:first-child,
+  .sq-container .sq-item:nth-child(2) {
+    border-top: 1px solid #e8ecf3 !important;
+  }
+  .sq-list .sq-item:not(:first-child):not(:nth-child(2)),
+  .sq-container .sq-item:not(:first-child):not(:nth-child(2)) {
+    border-top: none !important;
+  }
+  /* 데스크탑 질문/답변 폰트는 살짝 더 크게 */
+  .sq-q-text {
+    font-size: 18px !important;
+  }
+  .sq-answer p {
+    font-size: 15px !important;
+  }
+  .sq-question {
+    padding: 28px 8px !important;
   }
 
   /* === price-section (가격) === */
@@ -8333,24 +8418,26 @@
     transition: color 0.15s !important;
     white-space: nowrap !important;
   }
-  /* 1666-4557 — 회색 라운드 버튼, 우측 끝으로 밀어붙임 */
+  /* 1666-4557 — 파랑 버튼, 우측 끝으로 밀어붙임 */
   .topnav-menu a.topnav-phone-pill,
   .topnav-menu a.topnav-phone-pill:link,
   .topnav-menu a.topnav-phone-pill:visited {
     margin-left: auto !important;
-    background: #ffffff !important;
-    color: #1a1a1a !important;
-    border: 1px solid #d0d4da !important;
-    border-radius: 999px !important;
+    background: #2563eb !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 4px !important;
     padding: 8px 18px !important;
     font-size: 17px !important;
     font-weight: 600 !important;
-    transition: background 0.15s, border-color 0.15s !important;
+    transition: background 0.15s !important;
   }
   .topnav-menu a.topnav-phone-pill:hover {
-    background: #f5f6f8 !important;
-    border-color: #b8bdc5 !important;
-    color: #1a1a1a !important;
+    background: #1d4ed8 !important;
+    color: #ffffff !important;
+  }
+  .topnav.scrolled .topnav-menu a.topnav-phone-pill {
+    color: #ffffff !important;
   }
   .topnav.scrolled .topnav-menu a {
     color: #1a1a1a !important;
@@ -9504,7 +9591,7 @@
 <!-- ============ PC 예약가능 건수 알약 위젯 (데스크톱 전용) ============ -->
 <a href="#quote-section" class="booking-pill" aria-label="오늘 예약 가능 건수 - 견적문의 바로가기">
   <div class="booking-pill-logo">
-    <img src="https://sasimi32.cafe24.com/img/logow1.png" alt="스타클린" />
+    <img src="logow1.png" alt="스타클린" />
   </div>
   <div class="booking-pill-text">
     <div class="booking-pill-date" id="booking-pill-date">5월 13일</div>
@@ -9633,6 +9720,49 @@
     var mm = String(d.getMonth() + 1).padStart(2, '0');
     var dd = String(d.getDate()).padStart(2, '0');
     el.textContent = parseInt(mm, 10) + '월 ' + parseInt(dd, 10) + '일';
+  })();
+
+  // 예약가능 건수 1부터 36까지 카운트업 후 잠시 멈췄다 반복 (데스크탑 전용, 1.8초 + 1.5초 대기)
+  (function(){
+    if (!window.matchMedia('(min-width: 801px)').matches) return;
+    var numEl = document.querySelector('.booking-pill-num-big');
+    if (!numEl) return;
+    var TARGET = parseInt(numEl.textContent, 10) || 36;
+    var DURATION = 1800;
+    var PAUSE_AFTER = 1500; // 도착 후 멈춤 시간
+
+    function easeOutCubic(t){ return 1 - Math.pow(1 - t, 3); }
+
+    function runOnce(onDone){
+      numEl.textContent = '1';
+      var start = performance.now();
+      function step(now){
+        var t = Math.min(1, (now - start) / DURATION);
+        var p = easeOutCubic(t);
+        var v = Math.max(1, Math.floor(1 + (TARGET - 1) * p));
+        numEl.textContent = String(v);
+        if (t < 1) {
+          requestAnimationFrame(step);
+        } else {
+          numEl.textContent = String(TARGET);
+          if (onDone) onDone();
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    function loop(){
+      runOnce(function(){
+        setTimeout(loop, PAUSE_AFTER);
+      });
+    }
+
+    // 페이지 로드 후 살짝 딜레이 두고 시작
+    if (document.readyState === 'complete') {
+      setTimeout(loop, 400);
+    } else {
+      window.addEventListener('load', function(){ setTimeout(loop, 400); });
+    }
   })();
 </script>
 <!-- ============ PC 예약가능 건수 알약 위젯 끝 ============ -->
