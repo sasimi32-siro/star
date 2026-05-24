@@ -2162,7 +2162,7 @@
  <div class="sc-inner">
   <div class="sc-headline">
     <p>
-      재방문율 <span class="sc-accent">70%</span> 이상<br/>
+      재방문율 <span class="sc-accent">80%</span> 이상<br/>
       다시 찾는 데는 이유가 있습니다 <span class="sc-emoji">💙</span>
     </p>
   </div>
@@ -6721,7 +6721,7 @@
       <div class="qp-stat-div"></div>
       <div class="qp-stat">
         <p class="qp-stat-label">고객 만족 · 재방문율</p>
-        <p class="qp-stat-value"><span class="qp-count" data-target="70">0</span><span class="qp-stat-unit">%↑</span></p>
+        <p class="qp-stat-value"><span class="qp-count" data-target="80">0</span><span class="qp-stat-unit">%↑</span></p>
       </div>
       <div class="qp-stat-div"></div>
       <div class="qp-stat">
@@ -8036,7 +8036,7 @@
     padding: 120px 80px !important;
   }
 
-  /* === sc-section (재방문율 70% — 데스크톱 3x2 그리드) === */
+  /* === sc-section (재방문율 80% — 데스크톱 3x2 그리드) === */
   .sc-section {
     max-width: none !important;
     padding: 100px 40px 120px !important;
@@ -8642,7 +8642,7 @@
     border-bottom: none !important;
   }
 
-  /* 2) sc-section (재방문율 70%) 6개 카드 →
+  /* 2) sc-section (재방문율 80%) 6개 카드 →
         sa-section 카드(.sa-card.sa-card-with-img)의 CSS를 PC에서만 sc-card에 그대로 복사 적용.
         HTML 순서가 [텍스트→이미지]이므로 flex-direction은 column-reverse 사용.
         클래스만 다르고 시각 결과는 sa-card와 동일. */
@@ -9377,14 +9377,15 @@
     .floating-quote {
       opacity: 0;
       pointer-events: none;
-      transform: translateY(40px);
+      transform: translateY(40px) scale(0.85);
+      transform-origin: bottom right;
       transition: opacity 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
                   transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
     body.is-scrolled .floating-quote {
       opacity: 1;
       pointer-events: auto;
-      transform: translateY(0);
+      transform: translateY(0) scale(0.85);
     }
   }
   .floating-quote.fq-hidden { display: none !important; }
@@ -9618,7 +9619,7 @@
     padding: 14px 20px 14px 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     letter-spacing: -0.3px;
-    transform: scale(0.95);
+    transform: scale(0.86);
     transform-origin: bottom left;
     text-decoration: none;
     color: inherit;
@@ -9634,7 +9635,7 @@
   }
   .booking-pill:hover {
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
-    transform: scale(0.97) translateY(-2px);
+    transform: scale(0.87) translateY(-2px);
   }
   .booking-pill-logo {
     width: 72px;
@@ -9699,13 +9700,13 @@
   /* 좁은 데스크톱에서만 살짝 축소 (4K, QHD, 일반 FHD 데스크톱은 원본 100% 유지) */
   @media (max-width: 1399px) and (min-width: 1100px) {
     .booking-pill {
-      transform: scale(0.85);
+      transform: scale(0.77);
       transform-origin: bottom left;
     }
   }
   @media (max-width: 1099px) and (min-width: 801px) {
     .booking-pill {
-      transform: scale(0.74);
+      transform: scale(0.67);
       transform-origin: bottom left;
     }
   }
